@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+    outline: none;
+
+}
+
+.container h1{
+    position: relative;
+    top: -1pc;
+    left: 5pc;
+    
+}
+
+.container{
+    max-width: 900px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 43pc;
+    top: 2pc;
+    padding: 15px 10px;
+}
+
+@media only screen and (min-width: 640px) {
+    .container{
+        min-height:  550px;
+        box-shadow: 5px 5px 15px rgb(226, 43, 171),
+        5px 5px 15px rgb(189, 43, 226) ;
+
+    }
+}
+
+.line-wrap{
+
+    margin-bottom: 13px;
+    display: flex;
+}
+
+.line-wrap::after{
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.line{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgb(41, 41, 41);
+    font-size: 22px;
+    color: black;
+}
+
+.line:disabled{
+    color: purple ;
+}
+
+.line-wrap:last-of-type{
+    margin-bottom: 0 ;
+}
+
+.btn{
+    max-width: 100px;
+    padding: 10px ;
+    border: none;
+    margin-top: 25px;
+    font-size: 17px;
+    color: white;
+    background-color: blueviolet;
+    letter-spacing: 1px;
+    border-radius: 5px;
+}
+
+.edit-btn{
+    background: rgb(223, 0, 112);
+
+}
